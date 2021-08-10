@@ -20,10 +20,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: checkout
       - uses: actions/checkout@v2 
-      - run: echo "Checking out"
-
       - uses: actions/upload-artifact@v2
       # Runs a set of commands using the runners shell
       - name: archive
       - uses: actions/updload-artifact@v2
-      - run: echo "created and uploaded artifact"
