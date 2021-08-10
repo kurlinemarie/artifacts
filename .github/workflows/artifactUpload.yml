@@ -24,7 +24,7 @@ jobs:
       - name: create folder
         run: mkdir artifacts
       - name: artifact
-        uses: actions/updload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: artifacts
