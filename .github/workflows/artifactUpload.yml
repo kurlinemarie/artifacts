@@ -22,11 +22,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         uses: actions/checkout@v2 
       - name: create folder
-        run: |
-          mkdir artifacts
-          ls -alt
+        run: ls -alt
       - name: artifact
         uses: actions/upload-artifact@v2
         with:
           name: ${{ env.ARTIFACT_NAME }}
-          path: artifacts
+          path: .
